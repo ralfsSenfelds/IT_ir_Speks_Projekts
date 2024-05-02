@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root{
+    --maincolor: #8b9a71;
+    --radius: .7rem;
+    --maincolor-light: #99a780;
+    --bg: #e9f3fc;
+    --textcolor: #fff;
+    --textcolor2: #333;
+    --hovercolor: #ddd;
+    --border: .1rem solid rgba(0,0,0,10%);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,10%);
+}
+
+*{
+    font-family: "Noto Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    transition: all .3s ease-out;
+}
+
+header {
+    background-color: var(--maincolor);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--textcolor);
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    margin-right: 1rem;
+    color: var(--textcolor);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--textcolor2);
+}
+
+section {
+    background-color: var(--bg);
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+h1, h2 {
+    color: var(--textcolor2);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 1rem;
+  }
+  
+a {
+    text-decoration: none;
+    color: var(--textcolor2);
+}
+  
+a:hover {
+    color: var(--hovercolor);
+  }
+  
+p {
+    margin-bottom: 1rem;
+}
+  
+.btn {
+    background-color: var(--maincolor-light);
+    color: var(--textcolor2);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.btn:hover {
+    background-color: var(--hovercolor);
+    color: var(--textcolor2);
+}
+  
+#sakums {
+    background-image: url('/assets/images/mountains.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+  
+#sakums:hover {
+    background-position: 100% 100%;
+}
+
+.fa-bars {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#menu-btn{
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.3rem;
+    border-radius: var(--radius);
+    color: var(--textcolor);
+    background: var(--maincolor);
+    display: none;
+}
+#menu-btn:hover{
+    color: #fff;
+}
+
+@media(max-width:985px) {
+    #menu-btn{
+        display: block;
+    }
+}
