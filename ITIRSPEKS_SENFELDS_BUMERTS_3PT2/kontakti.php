@@ -1,4 +1,4 @@
-<?php require ('assets/header.php'); ?>
+<?php require('assets/header.php'); ?>
 
 <section id="kontakti">
     <div class="map-container">
@@ -56,4 +56,4 @@
     </div>
 </section>
             
-<?php require ('assets/footer.php'); ?>
+<?php require('assets/footer.php'); ?>

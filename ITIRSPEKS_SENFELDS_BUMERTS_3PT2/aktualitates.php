@@ -1,7 +1,7 @@
-<?php require ('assets/header.php'); ?>
+<?php require('assets/header.php'); ?>
 
 <section id="jaunumu_saraksts" class="container">
-    <div class="virsraksts_container">
+    <div>
         <h1 class="nodalas_virsraksts">Aktualitātes</h1>
     </div>
     <div class="boxes">
@@ -44,4 +44,4 @@
 </div>
 </section>
 
-<?php require ('assets/footer.php'); ?>
+<?php require('assets/footer.php'); ?>

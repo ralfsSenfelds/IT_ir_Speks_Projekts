@@ -119,7 +119,7 @@
     <div class="container">
     <div class="vakances-augsa">
     <h2>Vakances</h2>
-    <p>Vai esi gatavs jaunam profesionālam izaicinājumam? Mēs piedāvājam ne tikai darbu, bet arī iespēju augt un attīstīties. Ja esi motivēts, enerģisks un gatavs pierādīt sevi, tad šīs vakances ir tieši Tevi. Pievienojies vietā, kur tavs talants tiks novērtēts un atbalstīts!</p>
+    <p>Vai esi gatavs jaunam profesionālam izaicinājumam? Mēs piedāvājam ne tikai darbu, bet arī iespēju augt un attīstīties. Ja esi motivēts, enerģisks un gatavs pierādīt sevi, tad šīs vakances ir tieši Tev. Pievienojies vietā, kur tavs talants tiks novērtēts un atbalstīts!</p>
     </div>
     <div class="grid-container">
         <div class="grid-item">
