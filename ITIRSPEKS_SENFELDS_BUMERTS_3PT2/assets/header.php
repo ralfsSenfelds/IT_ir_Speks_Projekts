@@ -1,3 +1,4 @@
+<?php require('assets/crud_operations.php'); ?>
 <!DOCTYPE html>
 <html lang="lv">
 <head>
@@ -10,12 +11,14 @@
     <script defer src="assets/script.js"></script>
 </head>
 <body>
-    <header>
+<header>
+    <div class="navbar-container">
         <nav class="navbar">
             <a href="./"><i class="fas fa-home"></i> Sākumlapa</a>
             <a href="aktualitates.php"><i class="fa-solid fa-newspaper"></i> Aktualitātes</a>
             <a href="vakances.php"><i class="fa-solid fa-money-bill"></i> Vakances</a>
             <a href="kontakti.php"><i class="fa-solid fa-phone"></i> Kontakti</a>
         </nav>
-        <div id="menu-btn" class="fas fa-bars"></div>
-    </header>
+    </div>
+    <div id="menu-btn" class="fas fa-bars"></div>
+</header>

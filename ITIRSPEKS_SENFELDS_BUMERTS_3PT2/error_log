@@ -1,0 +1,209 @@
+[10-Jun-2024 20:55:03 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/aktualitates.php on line 15
+[10-Jun-2024 20:56:50 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/aktualitates.php on line 15
+[10-Jun-2024 20:56:58 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/aktualitates.php on line 15
+[10-Jun-2024 20:57:24 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/aktualitates.php on line 15
+[10-Jun-2024 20:57:24 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/aktualitates.php on line 15
+[10-Jun-2024 20:57:25 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/aktualitates.php on line 15
+[10-Jun-2024 20:57:25 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/aktualitates.php on line 15
+[10-Jun-2024 20:58:12 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/aktualitates.php on line 15
+[10-Jun-2024 20:58:12 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/aktualitates.php on line 15
+[10-Jun-2024 20:58:13 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/aktualitates.php on line 15
+[10-Jun-2024 20:58:13 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/aktualitates.php on line 15
+[10-Jun-2024 21:11:32 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 42
+[10-Jun-2024 21:11:32 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 42
+[10-Jun-2024 21:11:32 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 45
+[10-Jun-2024 21:11:32 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 69
+[10-Jun-2024 21:11:32 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 69
+[10-Jun-2024 21:12:41 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 42
+[10-Jun-2024 21:12:41 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 42
+[10-Jun-2024 21:12:41 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 45
+[10-Jun-2024 21:12:41 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 69
+[10-Jun-2024 21:12:41 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 69
+[10-Jun-2024 21:12:42 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 42
+[10-Jun-2024 21:12:42 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 42
+[10-Jun-2024 21:12:42 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 45
+[10-Jun-2024 21:12:42 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 69
+[10-Jun-2024 21:12:42 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 69
+[10-Jun-2024 21:16:20 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 42
+[10-Jun-2024 21:16:20 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 42
+[10-Jun-2024 21:16:20 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 45
+[10-Jun-2024 21:16:20 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 69
+[10-Jun-2024 21:16:20 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 69
+[10-Jun-2024 21:18:55 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:18:55 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:18:55 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 18
+[10-Jun-2024 21:18:55 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:18:55 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:18:55 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 54
+[10-Jun-2024 21:18:55 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:18:55 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:25 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:25 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:25 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 18
+[10-Jun-2024 21:20:25 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:25 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:25 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 54
+[10-Jun-2024 21:20:25 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:25 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 18
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 54
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 18
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 54
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 18
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 54
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:28 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 18
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 54
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 18
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 54
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:49 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:50 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:50 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:50 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 18
+[10-Jun-2024 21:20:50 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:50 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:50 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 54
+[10-Jun-2024 21:20:50 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:50 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:52 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:52 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:52 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 18
+[10-Jun-2024 21:20:52 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:52 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:52 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 54
+[10-Jun-2024 21:20:52 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:52 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:53 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:53 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:53 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 18
+[10-Jun-2024 21:20:53 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:53 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:53 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 54
+[10-Jun-2024 21:20:53 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:53 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 18
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 54
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 18
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 54
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:20:55 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 18
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 54
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 15
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 18
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 51
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 54
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Notice:  Undefined variable: savienojums in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:22:26 Europe/Riga] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/vakances.php on line 78
+[10-Jun-2024 21:29:14 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 101
+[10-Jun-2024 21:29:15 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 101
+[10-Jun-2024 21:29:16 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 101
+[10-Jun-2024 21:29:16 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 101
+[10-Jun-2024 21:29:26 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 101
+[10-Jun-2024 21:37:41 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[10-Jun-2024 21:37:41 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 151
+[10-Jun-2024 21:37:45 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[10-Jun-2024 21:37:45 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 151
+[10-Jun-2024 21:40:59 Europe/Riga] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'username'@'localhost' (using password: YES) in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:41:18 Europe/Riga] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'username'@'localhost' (using password: YES) in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:43:53 Europe/Riga] PHP Notice:  Undefined variable: vakances_izvadit in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:43:53 Europe/Riga] PHP Warning:  mysqli_query(): Empty query in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:43:53 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 147
+[10-Jun-2024 21:43:53 Europe/Riga] PHP Warning:  mysqli_close(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 164
+[10-Jun-2024 21:43:54 Europe/Riga] PHP Notice:  Undefined variable: vakances_izvadit in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:43:54 Europe/Riga] PHP Warning:  mysqli_query(): Empty query in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:43:54 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 147
+[10-Jun-2024 21:43:54 Europe/Riga] PHP Warning:  mysqli_close(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 164
+[10-Jun-2024 21:43:55 Europe/Riga] PHP Notice:  Undefined variable: vakances_izvadit in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:43:55 Europe/Riga] PHP Warning:  mysqli_query(): Empty query in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:43:55 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 147
+[10-Jun-2024 21:43:55 Europe/Riga] PHP Warning:  mysqli_close(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 164
+[10-Jun-2024 21:46:16 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 145
+[10-Jun-2024 21:46:16 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[10-Jun-2024 21:46:17 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 145
+[10-Jun-2024 21:46:17 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[10-Jun-2024 21:46:17 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 145
+[10-Jun-2024 21:46:17 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[10-Jun-2024 21:46:18 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 145
+[10-Jun-2024 21:46:18 Europe/Riga] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[10-Jun-2024 21:48:42 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:48:43 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:48:44 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:48:44 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:48:44 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:50:36 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:50:36 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:50:36 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:50:37 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:52:12 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:52:13 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:54:17 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:54:18 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:54:18 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 144
+[10-Jun-2024 21:56:53 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 147
+[10-Jun-2024 21:58:32 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 147
+[10-Jun-2024 21:58:32 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 147
+[10-Jun-2024 21:59:10 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[10-Jun-2024 21:59:10 Europe/Riga] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 153
+[10-Jun-2024 22:00:28 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[10-Jun-2024 22:00:28 Europe/Riga] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 153
+[10-Jun-2024 22:02:15 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[10-Jun-2024 22:02:15 Europe/Riga] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 153
+[10-Jun-2024 22:03:27 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[10-Jun-2024 22:03:27 Europe/Riga] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 153
+[10-Jun-2024 23:18:51 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[10-Jun-2024 23:18:51 Europe/Riga] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 153
+[11-Jun-2024 14:47:17 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[11-Jun-2024 14:47:17 Europe/Riga] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 153
+[11-Jun-2024 14:54:46 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[11-Jun-2024 14:54:46 Europe/Riga] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 153
+[11-Jun-2024 15:02:10 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[11-Jun-2024 15:02:10 Europe/Riga] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 153
+[11-Jun-2024 15:08:19 Europe/Riga] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 148
+[11-Jun-2024 15:08:19 Europe/Riga] PHP Warning:  mysqli_error(): Couldn't fetch mysqli in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/index.php on line 153

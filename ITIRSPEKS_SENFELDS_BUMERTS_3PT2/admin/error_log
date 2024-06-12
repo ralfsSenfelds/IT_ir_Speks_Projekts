@@ -1,0 +1,11 @@
+[10-Jun-2024 20:26:02 Europe/Riga] PHP Notice:  session_start(): A session had already been started - ignoring in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/admin/admin.php on line 7
+[10-Jun-2024 20:26:06 Europe/Riga] PHP Notice:  session_start(): A session had already been started - ignoring in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/admin/admin.php on line 7
+[10-Jun-2024 20:27:55 Europe/Riga] PHP Notice:  session_start(): A session had already been started - ignoring in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/admin/admin.php on line 7
+[10-Jun-2024 20:48:12 Europe/Riga] PHP Notice:  Undefined variable: moderatori_SQL in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/admin/admin.php on line 39
+[10-Jun-2024 20:48:12 Europe/Riga] PHP Warning:  mysqli_query(): Empty query in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/admin/admin.php on line 39
+[10-Jun-2024 20:48:13 Europe/Riga] PHP Notice:  Undefined variable: moderatori_SQL in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/admin/admin.php on line 39
+[10-Jun-2024 20:48:13 Europe/Riga] PHP Warning:  mysqli_query(): Empty query in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/admin/admin.php on line 39
+[10-Jun-2024 20:48:13 Europe/Riga] PHP Notice:  Undefined variable: moderatori_SQL in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/admin/admin.php on line 39
+[10-Jun-2024 20:48:13 Europe/Riga] PHP Warning:  mysqli_query(): Empty query in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/admin/admin.php on line 39
+[11-Jun-2024 14:56:29 Europe/Riga] PHP Notice:  session_start(): A session had already been started - ignoring in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/admin/adminassets/adminheader.php on line 5
+[11-Jun-2024 14:56:34 Europe/Riga] PHP Notice:  session_start(): A session had already been started - ignoring in /home2/grobina1/public_html/3pt2/bumerts/ITIRSPEKS_SENFELDS_BUMERTS_3PT2/admin/adminassets/adminheader.php on line 5

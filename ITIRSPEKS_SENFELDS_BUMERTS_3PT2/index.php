@@ -1,45 +1,33 @@
 <?php require('assets/header.php'); ?>
+<?php require('assets/crud_operations.php'); ?>
+
 <section id="start">
     <div class="container">
         <h1>IT ir spēks <img src="./assets/images/logo.png" alt=""></h1>
         <p>Izmanto šo iespēju iegūt IT karjeru kādā no uzņēmumiem!</p>
         <div class="button-group">
             <a href="vakances.php"><button class="btn">Apskatīt vakances</button></a>
-            
-            <button class="btn btn-popup">Kā pieteikties?</button>
-
-            <div id="popupOverlay" class="popup-overlay"></div>
-
-            <div id="popup" class="popup">
-                <div class="popup-content">
-                    <span class="close-btn">&times;</span>
-                    <h2>Popup Content</h2>
-                    <p>This is an example popup.</p>
+        </div>
+        <div id="popupOverlay" class="popup-overlay"></div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <h2>How to Apply for Vacancies</h2>
+                <div class="steps">
+                    <div class="step">
+                        <img src="assets/images/solis1.png" alt="Step 1">
+                        <p>Solis 1: Atrodi navigācijas panelī sadaļu vakances.</p>
+                    </div>
+                    <div class="step">
+                        <img src="assets/images/solis2.png" alt="Step 2">
+                        <p>Solis 2: Atrodi sev vēlamo vakanci uz kuru vēlies pretendēt.</p>
+                    </div>
+                    <div class="step">
+                        <img src="assets/images/solis3.png" alt="Step 3">
+                        <p>Solis 3: Ievadi savu informāciju, pievieno CV un spied nosūtīt.</p>
+                    </div>
                 </div>
             </div>
-            <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                    const popup = document.getElementById('popup');
-                    const popupButton = document.querySelector('.btn-popup');
-                    const closeButton = document.querySelector('.close-btn');
-                    const popupOverlay = document.getElementById('popupOverlay');
-
-                    popupButton.addEventListener('click', () => {
-                        popup.classList.add('show');
-                        popupOverlay.classList.add('show');
-                    });
-
-                    closeButton.addEventListener('click', () => {
-                        popup.classList.remove('show');
-                        popupOverlay.classList.remove('show');
-                    });
-
-                    popupOverlay.addEventListener('click', () => {
-                        popup.classList.remove('show');
-                        popupOverlay.classList.remove('show');
-                    });
-                });
-            </script>
         </div>
     </div>
     <div>
@@ -56,12 +44,13 @@
         </div>
     </div>
 </section>
+
 <section id="about-us">
     <div class="container-left">
         <div class="aboutus">
             <h1>Par mums</h1>
             <p>Mēs sadarbojies ar vairāk nekā 10 lielākajām IT kompānijām pasaulē, tāpēc sadarbojies ar mums!</p>
-            <button class="btn">Par mums</button>
+            <a class="btn" href="kontakti.php">Par mums</a>
         </div>
     </div>
     <div class="container-right">
@@ -87,90 +76,97 @@
         <div class="mySlides"><a class="partner-link" href="https://www.disney.com" target="_blank"><img src="./assets/images/partner10.jpg" alt="Partner 10"></a></div>
     </div>
 </section>
-<section id="jaunumu_saraksts">
-    <div class="container">
-        <div class="virsraksts_container">
-            <h2 class="nodalas_virsraksts">Aktuālie jaunumi</h2>
-        </div>
-        <div class="boxes">
-            <div class="box">
-                <img src="placeholder.png" alt="Placeholder image">
-                <h3>Jauns processors</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quis?</p>
-                <a href="#">Lasīt vairāk</a>
-            </div>
-            <div class="box">
-                <img src="placeholder.png" alt="Placeholder image">
-                <h3>Jauna programmesanas valoda</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quis?</p>
-                <a href="#">Lasīt vairāk</a>
-            </div>
-            <div class="box">
-                <img src="placeholder.png" alt="Placeholder image">
-                <h3>Datorprogrammaturas revolucija</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, quis?</p>
-                <a href="#">Lasīt vairāk</a>
-            </div>
-            <a href="aktualitates.php"><button id="visi-jaunumi-btn">Apskatīt visus jaunumus</button></a>
-        </div>
+<section id="jaunumu_saraksts" class="container">
+    <div>
+        <h1 class="nodalas_virsraksts">Aktualitātes</h1>
     </div>
+    <div class="boxes">
+        <?php
+        $savienojums = mysqli_connect($servers, $lietotajs, $parole, $db_nosaukums);
+        $query = "SELECT Aktualitates_ID, Attels, Virsraksts, Teksts FROM itspeks_aktualitates ORDER BY Pievienosanas_laiks DESC LIMIT 3";
+        $result = mysqli_query($savienojums, $query);
+
+        if (!$result) {
+            die("Query failed: " . mysqli_error($savienojums));
+        }
+
+        if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                $imageData = base64_encode($row['Attels']);
+                $imageType = 'image/jpeg';
+                if (strpos($imageData, '/9j/') === 0) { 
+                    $imageType = 'image/jpeg';
+                } elseif (strpos($imageData, 'iVBORw0KGgoAAAANSUhEUgAAAB') === 0) { 
+                    $imageType = 'image/png';
+                }
+                echo '<div class="box">';
+                echo '<div class="image-container">';
+                echo '<img src="data:' . $imageType . ';base64,' . $imageData . '" alt="Image">';
+                echo '</div>';
+                echo '<div class="text-container">';
+                echo '<h3>' . $row['Virsraksts'] . '</h3>';
+                // Truncate the news text to a certain number of characters
+                $text = $row['Teksts'];
+                $max_length = 150; // Maximum number of characters to display
+                if (strlen($text) > $max_length) {
+                    $text = substr($text, 0, $max_length) . '...';
+                }
+                echo '<p>' . $text . '</p>';
+                echo '<a href="aktualitates.php?id=' . $row ['Aktualitates_ID'] . '" class="read-more-btn">Lasīt vairāk</a>';
+                echo '</div>';
+                echo '</div>';
+            }
+        }
+        else {
+            echo '<p>Nav pieejamu aktualitāšu.</p>';
+        }
+        mysqli_close($savienojums);
+        ?>
+    </div>
+    <a href="aktualitates.php"><button id="visi-jaunumi-btn">Apskatīt visus jaunumus</button></a>
 </section>
+
 <section id="vakances">
     <div class="container">
-    <div class="vakances-augsa">
-    <h2>Vakances</h2>
-    <p>Vai esi gatavs jaunam profesionālam izaicinājumam? Mēs piedāvājam ne tikai darbu, bet arī iespēju augt un attīstīties. Ja esi motivēts, enerģisks un gatavs pierādīt sevi, tad šīs vakances ir tieši Tev. Pievienojies vietā, kur tavs talants tiks novērtēts un atbalstīts!</p>
-    </div>
-    <div class="grid-container">
-        <div class="grid-item">
-                <img src="https://via.placeholder.com/500" alt="Placeholder Image">
-                <div class="overlay">
-                    <h3>Column 1</h3>
-                    <p>Text on image 1</p>
-                    <a href="">Skatīt vairāk</a>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="https://via.placeholder.com/500" alt="Placeholder Image">
-                <div class="overlay">
-                    <h3>Column 2</h3>
-                    <p>Text on image 2</p>
-                    <a href="">Skatīt vairāk</a>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="https://via.placeholder.com/500" alt="Placeholder Image">
-                <div class="overlay">
-                    <h3>Column 3</h3>
-                    <p>Text on image 3</p>
-                    <a href="">Skatīt vairāk</a>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="https://via.placeholder.com/500" alt="Placeholder Image">
-                <div class="overlay">
-                    <h3>Column 4</h3>
-                    <p>Text on image 4</p>
-                    <a href="">Skatīt vairāk</a>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="https://via.placeholder.com/500" alt="Placeholder Image">
-                <div class="overlay">
-                    <h3>Column 5</h3>
-                    <p>Text on image 5</p>
-                    <a href="">Skatīt vairāk</a>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="https://via.placeholder.com/500" alt="Placeholder Image">
-                <div class="overlay">
-                    <h3>Column 6</h3>
-                    <p>Text on image 6</p>
-                    <a href="">Skatīt vairāk</a>
-                </div>
-            </div>
+        <div class="vakances-augsa">
+            <h2>Vakances</h2>
+            <p>Vai esi gatavs jaunam profesionālam izaicinājumam? Mēs piedāvājam ne tikai darbu, bet arī iespēju augt un attīstīties. Ja esi motivēts, enerģisks un gatavs pierādīt sevi, tad šīs vakances ir tieši Tev. Pievienojies vietā, kur tavs talants tiks novērtēts un atbalstīts!</p>
         </div>
+        <div class="grid-container">
+    <?php
+    // Query to fetch latest 6 vacancies based on the adding time
+    $vakances_query = "SELECT Attels, Vakance, Apraksts FROM itspeks_vakances ORDER BY Pievienosanas_laiks DESC LIMIT 6";
+    $savienojums = mysqli_connect($servers, $lietotajs, $parole, $db_nosaukums);
+    $vakances_result = mysqli_query($savienojums, $vakances_query);
+
+    if (!$vakances_result) {
+        echo "<p>Error: " . mysqli_error($savienojums) . "</p>";
+    } else {
+        if (mysqli_num_rows($vakances_result) > 0) {
+            while ($vakances_row = mysqli_fetch_assoc($vakances_result)) {
+                echo "<div class='grid-item'>";
+                echo "<div class='image-container'>";
+                echo "<img src='data:image/png;base64," . base64_encode($vakances_row['Attels']) . "' alt='Vacancy Image'>";
+                echo "</div>";
+                echo "<div class='overlay'>";
+                echo "<h3>" . htmlspecialchars($vakances_row['Vakance']) . "</h3>";
+                // Truncate the vacancy description to a certain number of characters
+                $description = $vakances_row['Apraksts'];
+                $max_length = 100; // Maximum number of characters to display
+                if (strlen($description) > $max_length) {
+                    $description = substr($description, 0, $max_length) . '...';
+                }
+                echo "<p>" . htmlspecialchars($description) . "</p>";
+                echo "<a href='vakances.php' class='read-more-btn'>Skatīt vairāk</a>"; // Link to vakances.php
+                echo "</div>";
+                echo "</div>";
+            }
+        } else {
+            echo "<p>No vacancies found.</p>";
+        }
+    }
+    ?>
+</div>
     </div>
 </section>
 

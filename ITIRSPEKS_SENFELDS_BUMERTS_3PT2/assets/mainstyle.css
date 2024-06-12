@@ -51,7 +51,14 @@ header {
     justify-content: space-around;
     align-items: center;
 }
-
+.navbar.active {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.navbar.active a {
+    display: block;
+    margin: 10px 0;
+}
 .navbar a {
     font-size: 1.2rem;
     margin-right: 1rem;
@@ -60,11 +67,30 @@ header {
     padding: 10px;
     transition: all 0.3s ease;
 }
-
 .navbar a:hover {
     background-color: var(--hovercolor);
     border-radius: 5px;
 }
+
+#menu-btn {
+    display: none;
+}
+
+@media (max-width: 770px) {
+    .navbar a {
+        display: none;
+    }
+
+    #menu-btn {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .navbar.active a {
+        display: block;
+    }
+}
+
 
 /* Section styles */
 section {
@@ -170,10 +196,14 @@ h4 img {
     z-index: 3; /* Sit on top */
     left: 50%;
     top: 50%;
-    width: 800px;
-    height: 800px;
-    margin-left: -400px; /* Center horizontally */
-    margin-top: -400px; /* Center vertically */
+    transform: translate(-50%, -50%);
+    width: 900px; /* Increased width */
+    height: auto; /* Auto height */
+    max-width: 90%; /* Limit width to avoid overflow */
+    max-height: 90%; /* Limit height to avoid overflow */
+    overflow: auto; /* Enable scrolling if content overflows */
+    margin-left: -450px; /* Center horizontally */
+    margin-top: -450px; /* Center vertically */
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -181,11 +211,23 @@ h4 img {
     transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
-.popup.show {
-    display: block;
-    opacity: 1; /* Fully visible */
-    transform: scale(1); /* Full size */
-    animation: popup 0.7s; /* Add animation here */
+.popup-content {
+    padding: 20px; /* Add padding to content */
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step {
+    margin-bottom: 20px;
+}
+
+.step img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Ensure aspect ratio */
 }
 
 @keyframes popup {
@@ -205,11 +247,6 @@ h4 img {
     }
 }
 
-.popup-content {
-    color: #107e4b;
-    padding: 20px;
-    z-index: 3;
-}
 
 .close-btn {
     color: #aaa;
@@ -243,26 +280,6 @@ h4 img {
     display: block;
     opacity: 1;
 }
-
-/* Overlay styles */
-.popup-overlay {
-    display: none;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.popup-overlay.show {
-    display: block;
-    opacity: 1;
-}
-
 /* box------------------------------------------------- */
 
 .boxes {
@@ -423,6 +440,7 @@ h4 img {
 /* News section styles */
 #jaunumu_saraksts {
     padding-bottom: 5rem;
+    text-align: center;
 }
 
 .nodalas_virsraksts {
@@ -667,7 +685,6 @@ h4 img {
 }
 
 .instrukcijas p, h3 {
-    padding: 2rem;
     font-size: 1rem;
 }
 
@@ -751,19 +768,420 @@ textarea {
     font-family: "Noto Sans", sans-serif;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-    .navbar {
+
+
+
+/*Vakances*/
+.vacancies-table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 1.2rem;
+}
+.vacancies-table th, .vacancies-table td {
+    border: 1px solid #ddd;
+    padding: 12px 8px;
+    text-align: left;
+    vertical-align: top;
+}
+.vacancies-table th {
+    background: var(--maincolor);
+    color: var(--textcolor);
+}
+.vacancy-row {
+    display: flex;
+    align-items: center;
+}
+.vacancy-row img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.filter-container {
+    background: var(--maincolor);
+    color: #eee;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.filter-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.filter-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.filter-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.filter-container select, .filter-container input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+.filter-container select:focus, .filter-container input:focus {
+    border-color: var(--maincolor);
+    outline: none;
+}
+.filter-button {
+    background-color: var(--textcolor);
+    color: var(--maincolor);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+.filter-button:hover {
+    background-color: var(--maincolor-light);
+}
+.atdalisana {
+    background: var(--maincolor);
+    color: #333;
+    padding: 20px;
+}
+.pages,.apply-button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.pages a, .apply-button {
+    background-color: var(--maincolor);
+    color: #eee;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+.pages a:hover, .apply-button:hover {
+    background-color: #555;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.image-container {
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: white;
+}
+
+.overlay {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.overlay h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.overlay p {
+    margin: 10px 0;
+}
+
+.overlay .read-more-btn {
+    background-color: var(--maincolor);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.overlay .read-more-btn:hover {
+    background-color: var(--maincolor-light);
+}
+
+
+
+/* Aktualitates index*/
+
+#jaunumu_saraksts {
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+#jaunumu_saraksts .nodalas_virsraksts {
+    text-align: center;
+    color: var(--maincolor);
+    font-size: 2rem;
+    margin: 3rem;
+}
+
+#jaunumu_saraksts .boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#jaunumu_saraksts .box {
+    width: 100%;
+    max-width: 400px; /* Adjust the width as needed */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+#jaunumu_saraksts .box:hover {
+    transform: translateY(-5px);
+}
+
+#jaunumu_saraksts .image-container {
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+#jaunumu_saraksts .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+#jaunumu_saraksts .text-container {
+    padding: 20px;
+}
+
+#jaunumu_saraksts .text-container h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--maincolor);
+}
+
+#jaunumu_saraksts .text-container p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: var(--textcolor3);
+}
+
+#jaunumu_saraksts .read-more-btn {
+    display: block;
+    background-color: var(--maincolor);
+    color: white;
+    padding: 10px 1rem 10px 1rem;
+    border: none;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center; /* Center the text */
+}
+
+#jaunumu_saraksts .read-more-btn:hover {
+    background-color: var(--maincolor-light);
+}
+
+
+/*Responsivitāte*/
+
+
+@media (max-width: 1340px) {
+    .box-main {
+        align-items: center;
+        width: 800px;
+    }
+
+    .start-box {
+        width: 60%; /* Full width on smaller screens */
+        margin: 0 auto;
+    }
+    #about-us{
+        width: 780px;
+    }
+
+    #about-us .btn{
+        width: 100%;
+    }
+
+    #about-us .container-right img{
+        width: 80%;
+    }
+
+    .social_links{
         flex-direction: column;
-        align-items: flex-start;
     }
-    .navbar a {
-        padding: 10px 20px;
-        display: block;
+    .footeris_container{
+        width: 80%;
     }
-    #menu-btn {
-        display: block;
-        cursor: pointer;
-        margin-top: 10px;
+}
+
+@media (max-width: 1100px) {
+    .box-main {
+        align-items: center;
+        width: 800px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .start-box {
+        width: 60%; /* Full width on smaller screens */
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 980px) {
+    .box-main {
+        align-items: center;
+        width: 800px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .start-box {
+        width: 60%; /* Full width on smaller screens */
+        margin: 0 auto;
+    }
+
+    .button-group{
+        padding: 0 0;
+    }
+    #about-us{
+        width: 80%;
+    }
+    #about-us .container-right img{
+        width: 80%;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footeris_container{
+        width: 60%;
+    }
+}
+@media (max-width: 701px) {
+    .box-main {
+  
+    }
+
+    .start-box {
+     display: none;
+    }
+    #about-us .container-right{
+        display: none;
+    }
+
+    #footeris{
+        display: none;
+    }
+
+
+}
+@media (max-width: 510px) {
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 525px) {
+    .box-main {
+        align-items: center;
+        width: 800px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .start-box {
+        width: 60%; /* Full width on smaller screens */
+        margin: 0 auto;
+    }
+
+    .button-group{
+        padding: 0 0;
+    }
+    h1 img{
+        display: none;
+    }
+    #about-us .container-right{
+        display: none;
     }
 }

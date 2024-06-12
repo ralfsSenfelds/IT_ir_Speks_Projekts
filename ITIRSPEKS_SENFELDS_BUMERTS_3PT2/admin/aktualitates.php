@@ -1,134 +1,227 @@
-<!DOCTYPE html>
-<html lang="lv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT ir Spēks</title>
-    <link rel="stylesheet" href="adminassets/adminstyle.css">
-    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script defer src="assets/script.js"></script>
-</head>
+<?php
+require "./adminassets/adminheader.php";
 
-<style>
-    :root {
-    --maincolor: #107e4b;
-    --radius: 0.7rem;
-    --maincolor-light: #16c373;
-    --bg: #ffffff;
-    --textcolor: #fff;
-    --textcolor2: #333;
-    --textcolor3: #000;
-    --hovercolor: #16c373;
-    --border: 0.1rem solid rgba(0, 0, 0, 10%);
-    --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 10%);
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+// Define the number of aktualitates per page
+$aktualitatesPerPage = 4;
+// Determine the current page
+if (isset($_GET['page']) && is_numeric($_GET['page'])) {
+    $currentPage = intval($_GET['page']);
+} else {
+    $currentPage = 1;
 }
 
-.admin-panel {
-    display: flex;
-    height: 100vh;
+// Calculate the offset for the SQL query
+$offset = ($currentPage - 1) * $aktualitatesPerPage;
+
+// Fetch aktualitates from the database
+$sql = "SELECT COUNT(*) as total FROM itspeks_aktualitates";
+$result = mysqli_query($savienojums, $sql);
+$row = mysqli_fetch_assoc($result);
+$totalAktualitates = $row['total'];
+$totalPages = ceil($totalAktualitates / $aktualitatesPerPage);
+
+// Modify SQL query to retrieve aktualitates for the current page
+$sql = "SELECT * FROM itspeks_aktualitates ORDER BY Aktualitates_ID DESC LIMIT $offset, $aktualitatesPerPage";
+$result = mysqli_query($savienojums, $sql);
+
+// Check if any aktualitates are found
+if (mysqli_num_rows($result) > 0) {
+    $aktualitates = mysqli_fetch_all($result, MYSQLI_ASSOC);
+} else {
+    $aktualitates = array();
 }
 
-.sidebar {
-    background-color: var(--maincolor);
-    color: #fff;
-    width: 250px;
-    padding: 20px;
+// Delete aktualitates
+if (isset($_POST['delete_news'])) {
+    $id = $_POST['delete_id'];
+    $delete_sql = "DELETE FROM itspeks_aktualitates WHERE Aktualitates_ID = ?";
+    $delete_stmt = $savienojums->prepare($delete_sql);
+    $delete_stmt->bind_param("i", $id);
+    $delete_stmt->execute();
+    header("Location: aktualitates.php");
+    exit();
 }
 
-.sidebar h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+// Edit aktualitates
+if (isset($_POST['edit_news'])) {
+    $id = $_POST['edit_id'];
+    $virsraksts = $_POST['edit_virsraksts'];
+    $teksts = $_POST['edit_teksts'];
+    $attels = isset($_FILES['edit_attels']) ? $_FILES['edit_attels'] : null;
+
+    // Fetch existing image data
+    $existing_aktualitate_query = "SELECT Attels FROM itspeks_aktualitates WHERE Aktualitates_ID = ?";
+    $stmt = $savienojums->prepare($existing_aktualitate_query);
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+    $existing_aktualitate_result = $stmt->get_result();
+    $existing_aktualitate_data = $existing_aktualitate_result->fetch_assoc();
+
+    // Extract existing image data
+    $existing_attels_data = $existing_aktualitate_data['Attels'];
+
+    if ($attels && $attels['size'] > 0) {
+        // If a new image is uploaded, update the image data
+        $attels_data = file_get_contents($attels['tmp_name']);
+    } else {
+        // Otherwise, keep the existing image data
+        $attels_data = $existing_attels_data;
+    }
+
+    $sql = "UPDATE itspeks_aktualitates SET Virsraksts = ?, Teksts = ?, Attels = ? WHERE Aktualitates_ID = ?";
+    $stmt = $savienojums->prepare($sql);
+    $stmt->bind_param("sssi", $virsraksts, $teksts, $attels_data, $id);
+    $stmt->execute();
+    header("Location: aktualitates.php");
+    exit();
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
+// Add aktualitates
+if (isset($_POST['add_news'])) {
+    $virsraksts = $_POST['virsraksts'];
+    $teksts = $_POST['teksts'];
+    $attels = $_FILES['attels'];
 
-.sidebar li {
-    margin-bottom: 10px;
+    $attels_data = file_get_contents($attels['tmp_name']);
+    $sql = "INSERT INTO itspeks_aktualitates (Virsraksts, Teksts, Attels, Pievienosanas_laiks) VALUES (?, ?, ?, NOW())";
+    $stmt = $savienojums->prepare($sql);
+    $stmt->bind_param("sss", $virsraksts, $teksts, $attels_data);
+    $stmt->execute();
+    header("Location: aktualitates.php");
+    exit();
 }
+?>
 
-.sidebar a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.content {
-    flex-grow: 1; /* Take remaining space */
-}
-
-.news-panel {
-    padding: 20px;
-}
-
-.news-panel h2 {
-    color: var(--textcolor3);
-}
-
-.news-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust as needed */
-    grid-gap: 20px;
-    margin-top: 20px;
-}
-
-.news-item {
-    background-color: var(--bg);
-    border: var(--border);
-    border-radius: var(--radius);
-    box-shadow: var(--box-shadow);
-    padding: 20px;
-}
-
-.news-item h3 {
-    margin-top: 0;
-}
-
-.edit-btn {
-    background-color: var(--maincolor);
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-}
-
-.edit-btn:hover {
-    background-color: var(--hovercolor);
-}
-
-</style>
-<body>
+<body class="admin-page">
     <div class="admin-panel">
     <div class="sidebar">
-            </h1><a href="admin.php"><h1>Admin panelis</h1></a>
-            <ul>
-                <li><a href="vakances.php">Vakances</a></li>
-                <li><a href="aktualitates.php">Aktualitātes</a></li>
-            </ul>
+        <a href="admin.php"><h1>Admin panelis</h1></a>
+        <ul>
+            <li><a href="vakances.php">Vakances</a></li>
+            <li><a href="aktualitates.php">Aktualitātes</a></li>
+            <li><a href="pieteikumi.php">Pieteikumi</a></li>
+            <li><a href="darbinieki.php">Darbinieki</a></li>
+        </ul>
+        <div class="bottom-link">
+            <a href="../index.php">Sākumlapa</a>
         </div>
+    </div>
         <div class="content">
             <div class="news-panel">
                 <h2>Aktualitātes</h2>
+                <button id="addNewsBtn" class="btn">Pievienot aktualitāti</button>
                 <div class="news-list">
-                    <div class="news-item">
-                        <h3>Jauna aktualitāte</h3>
-                        <p>Aktualitātes apraksts Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="edit_news.html" class="edit-btn">Rediģēt</a>
-                    </div>
+                    <?php foreach ($aktualitates as $aktualitate): ?>
+                        <div class="news-item">
+                            <h3><?php echo htmlspecialchars($aktualitate['Virsraksts']); ?></h3>
+                            <p><?php echo htmlspecialchars($aktualitate['Teksts']); ?></p>
+                            <button class="edit-btn" 
+                                data-id="<?php echo $aktualitate['Aktualitates_ID']; ?>"
+                                data-virsraksts="<?php echo htmlspecialchars($aktualitate['Virsraksts']); ?>"
+                                data-teksts="<?php echo htmlspecialchars($aktualitate['Teksts']); ?>"
+                                data-existing-image="data:image/jpeg;base64,<?php echo base64_encode($aktualitate['Attels']); ?>">Rediģēt</button>
+                            <form method="POST" style="display:inline;">
+                                <input type="hidden" name="delete_id" value="<?php echo $aktualitate['Aktualitates_ID']; ?>">
+                                <button type="submit" name="delete_news" class="delete-btn">Dzēst</button>
+                            </form>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+                <div class="pagination">
+                    <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+                        <a href="?page=<?php echo $i; ?>" class="btn <?php if ($i == $currentPage) echo 'active'; ?>"><?php echo $i; ?></a>
+                    <?php endfor; ?>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Pop up pievienošana -->
+    <div id="addNewsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Pievienot aktualitāti</h2>
+            <form method="POST" action="aktualitates.php" enctype="multipart/form-data">
+            <label for="virsraksts">Virsraksts:</label>
+            <input type="text" id="virsraksts" name="virsraksts" required>
+            <label for="teksts">Teksts:</label>
+            <textarea id="teksts" name="teksts" required></textarea>
+            <label for="attels">Attēls:</label>
+            <input type="file" id="attels" name="attels" accept="image/*" required>
+            <button type="submit" name="add_news" class="btn">Pievienot</button>
+            </form>
+        </div>
+    </div>
+    <!-- Pop up rediģēšana -->
+    <div id="editNewsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Rediģēt aktualitāti</h2>
+            <form id="editForm" method="POST" action="aktualitates.php" enctype="multipart/form-data">
+                <input type="hidden" id="edit_id" name="edit_id">
+                <label for="edit_virsraksts">Virsraksts:</label>
+                <input type="text" id="edit_virsraksts" name="edit_virsraksts" required>
+                <label for="edit_teksts">Teksts:</label>
+                <textarea id="edit_teksts" name="edit_teksts" required></textarea>
+                <label for="edit_attels">Esošais Attēls:</label>
+                <img id="existingImage" src="" alt="Attēls" style="max-width: 200px; height: auto;">
+                <label for="edit_attels">Jauns Attēls:</label>
+                <input type="file" id="edit_attels" name="edit_attels" accept="image/*">
+                <button type="submit" name="edit_news" class="btn">Saglabāt</button>
+            </form>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const addNewsBtn = document.getElementById('addNewsBtn');
+    const addNewsModal = document.getElementById('addNewsModal');
+    const editNewsModal = document.getElementById('editNewsModal');
+    const closeBtns = document.querySelectorAll('.close');
+
+    // Function to close modals
+    function closeModals() {
+        addNewsModal.style.display = 'none';
+        editNewsModal.style.display = 'none';
+    }
+
+    // Open add news pop-up
+    addNewsBtn.addEventListener('click', function() {
+        addNewsModal.style.display = 'block';
+    });
+
+    // Open edit news pop-up and populate form fields with existing data
+    document.querySelectorAll('.edit-btn').forEach(function(editBtn) {
+        editBtn.addEventListener('click', function() {
+            const id = editBtn.getAttribute('data-id');
+            const virsraksts = editBtn.getAttribute('data-virsraksts');
+            const teksts = editBtn.getAttribute('data-teksts');
+            const existingImage = editBtn.getAttribute('data-existing-image');
+
+            document.getElementById('edit_id').value = id;
+            document.getElementById('edit_virsraksts').value = virsraksts;
+            document.getElementById('edit_teksts').value = teksts;
+            document.getElementById('existingImage').src = existingImage;
+
+            editNewsModal.style.display = 'block';
+        });
+    });
+
+    // Close pop-up
+    closeBtns.forEach(function(btn) {
+        btn.addEventListener('click', closeModals);
+    });
+
+    // Close pop-up when clicked outside
+    window.addEventListener('click', function(event) {
+        if (event.target === addNewsModal || event.target === editNewsModal) {
+            closeModals();
+        }
+    });
+});
+</script>
 </body>
 </html>

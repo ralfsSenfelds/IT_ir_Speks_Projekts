@@ -1,3 +1,28 @@
+<?php
+session_start();
+require('../assets/crud_operations.php');
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["username"]) && isset($_POST["password"])) {
+    $lietotajvards = mysqli_real_escape_string($savienojums, $_POST["username"]);
+    $parole = mysqli_real_escape_string($savienojums, $_POST["password"]);
+
+    $sql = "SELECT * FROM itspeks_lietotaji WHERE Lietotajvards = '$lietotajvards'";
+    $rezultats = mysqli_query($savienojums, $sql);
+
+    if (mysqli_num_rows($rezultats) == 1) {
+        $user = mysqli_fetch_assoc($rezultats);
+        if (password_verify($parole, $user["Parole"])) {
+            $_SESSION["username"] = $user["Lietotajvards"];
+            $_SESSION["role"] = $user["Moderators"]; // Store the role in session
+            exit();
+        } else {
+            $error_message = "Incorrect username or password!";
+        }
+    } else {
+        $error_message = "Incorrect username or password!";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="lv">
 <head>
@@ -11,7 +36,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="./admin.php" method="post" class="login-form">
+        <form action="login.php" method="post" class="login-form">
             <h2><img src="../assets/images/logo.png" alt=""> Login</h2>
             <div class="input-container">
                 <i class="fas fa-user"></i>
@@ -23,6 +48,9 @@
             </div>
             <input class="btn" type="submit" value="Apstiprināt">
         </form>
+        <?php if(isset($error_message)): ?>
+            <p style="color:red;"><?php echo $error_message; ?></p>
+        <?php endif; ?>
     </div>
 </body>
 </html>

@@ -14,6 +14,7 @@
             <a href="aktualitates.php" class="footer-link">Aktualitātes</a>
             <a href="vakances.php" class="footer-link">Vakances</a>
             <a href="kontakti.php" class="footer-link">Kontakti</a>
+            <a href="./admin/login.php" class="footer-link">Administrācijai</a>
          </div>
          <div class="footeris_section">
             <h4>Seko mums</h4>
